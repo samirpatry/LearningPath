@@ -1,1 +1,2 @@
-# LearningPath.github.io
+# LearningPath
+
