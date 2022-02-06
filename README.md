@@ -1,7 +1,7 @@
 # LearningPath
 
 My-Learning Path
-Beginner 
+Beginner
 Welcome
 Guide
 Starting Point
