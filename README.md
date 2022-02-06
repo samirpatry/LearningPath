@@ -2,10 +2,8 @@
 
 My-Learning Path
 Beginner 
-
 Welcome
 Guide
-
 Starting Point
 Linux Basic & DayToDay
 Scripting
