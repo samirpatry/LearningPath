@@ -1,0 +1,2 @@
+kubectl exec -n kube-system  etcd-minikube -- sh -c "ETCDCTL_API=3 etcdctl --endpoints https://192.168.49.2:2379 --cacert /var/lib/minikube/certs/etcd/ca.crt --key /var/lib/minikube/certs/etcd/server.key --cert /var/lib/minikube/certs/etcd/server.crt get / --prefix --keys-only"
+
