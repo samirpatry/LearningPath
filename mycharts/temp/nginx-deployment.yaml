@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: MLnginx
+  name: mydeployment-nginx
+  namespace: samir
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: Lnginx
+  template:
+    metadata:
+      labels:
+        app: Lnginx
+    spec:
+      containers:
+      - image: harbor.mwp-mavenir.com/mvnr-mtcil/nginx:v1
+        name: mypod-nginx
+      nodeSelector:
+        samir: "true"
