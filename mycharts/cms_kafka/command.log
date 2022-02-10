@@ -1,0 +1,2 @@
+kubectl apply -f kafka-0-deployment.yaml -f kafka-1-deployment.yaml -f kafka-2-deployment.yaml
+kubectl apply -f kafka-0-svc-culsterIP.yaml -f kafka-1-svc-culsterIP.yaml -f kafka-2-svc-culsterIP.yaml

@@ -1,0 +1,16 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: cms-kafka-0
+  namespace: samir
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`kafka-0.cluster.com`)
+      kind: Rule
+      services:
+        - name: kafka-0-cip-svc
+          port: 9092
+

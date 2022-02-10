@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: SLnginx
+  name: mysvc-cip-nginx
+  namespace: samir
+spec:
+  ports:
+  - name: myclusteripservice
+    port: 9198
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: Lnginx
+  type: ClusterIP

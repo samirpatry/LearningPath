@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: pod-kafka-0
+  name: kafka-0
+  namespace: samir
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: Lkafka-0
+  template:
+    metadata:
+      labels:
+        app: Lkafka-0
+    spec:
+      containers:
+      - image: harbor.mwp-mavenir.com/mvnr-mtcil/nginx:v1
+        name: kafka-0
+      nodeSelector:
+        samir: "true"
