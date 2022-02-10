@@ -7,7 +7,7 @@
     •	Docker
     •	Container Orchestration
     •	DevOps Fundamentals
-      - Charts
+            - Charts
     •	SRE
 
 ## TestingCharts
